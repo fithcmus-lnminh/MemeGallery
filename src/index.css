@@ -1,0 +1,77 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://images.pexels.com/photos/295771/pexels-photo-295771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.meme__header {
+  text-align: center;
+}
+
+.btn__get-meme {
+  background-color: #198754;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn__get-meme:hover {
+  background-color: #13663f;
+  transition: ease-out 0.3s;
+}
+
+.meme__item {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(57, 167, 69);
+  margin: 16px 0;
+}
+
+.meme__img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.meme__name {
+  margin: 16px 0 4px 0;
+  text-align: center;
+  color: #000;
+}
+
+.loader__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #57ad53;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
